@@ -23,7 +23,7 @@ const Login = ({ changeJwt }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${config.BASE_API}/users/login`, formData);
+      const response = await axios.post(`${config.BASE_API}/api/users/login`, formData);
       const token = response.data.access_token;
       console.log("Token received:", token);
       changeJwt(token);
@@ -41,7 +41,7 @@ const Login = ({ changeJwt }) => {
             <div className="body" id="card-body">
               <h2 className="text-center mb-2">Inicia sesión</h2>
               <form onSubmit={handleSubmit} id="formLogin">
-                <p className="text-center mb-4">Ingrese su dirección de correo electrónico/email y contraseña.</p>
+                <p className="text-center mb-4">Ingrese su nombre de usuario y contraseña para poder ingresar.</p>
                 <div className="my-3">
                   <label htmlFor="username" className="form-label">Dirección de correo electrónico</label>
                   <input type="text" className="form-control" id="username" name="username" value={formData.username} onChange={handleChange} required />

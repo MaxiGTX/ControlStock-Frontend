@@ -16,13 +16,13 @@ function Apps({ addToCart, authenticated }) {
 
     const recuperarProductos = async () => {
         setCargando(true);
-        const response = await axios.get(`${config.BASE_API}/products`);
+        const response = await axios.get(`${config.BASE_API}/api/products`);
         setProductos(response.data.data);
         setCargando(false);
     };
 
     const recuperarCategorias = async () => {
-        const response = await axios.get(`${config.BASE_API}/categories`);
+        const response = await axios.get(`${config.BASE_API}/api/categories`);
         setCategorias(response.data.data);
     };
 

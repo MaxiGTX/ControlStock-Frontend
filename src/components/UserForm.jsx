@@ -31,7 +31,7 @@ const UserForm = ({ user, onClose, onRefresh }) => {
         role: formData.role
       };
 
-      await axios.put(`${config.BASE_API}/userEdit/users/${user._id}`, data, {
+      await axios.put(`${config.BASE_API}/api/userEdit/users/${user._id}`, data, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

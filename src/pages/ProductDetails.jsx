@@ -14,7 +14,7 @@ const ProductDetails = ({ addToCart }) => {
     useEffect(() => {
         const fetchProducto = async () => {
             try {
-                const response = await axios.get(`${config.BASE_API}/products/codigo/${codigo}`);
+                const response = await axios.get(`${config.BASE_API}/api/products/codigo/${codigo}`);
                 setProducto(response.data.data);
             } catch (error) {
                 setError('Producto no encontrado');

@@ -106,7 +106,7 @@ const Register = () => {
 
     if (validUsername && validEmail && validApellido && validNombre && validTelefono && validPassword && validConfirmPassword && validGenero && validTerminos) {
       try {
-        const response = await axios.post(`${config.BASE_API}/users/register`, formData);
+        const response = await axios.post(`${config.BASE_API}/api/users/register`, formData);
         setMessage(response.data.message);
         window.location.href = '/registroSuccess';
       } catch (error) {

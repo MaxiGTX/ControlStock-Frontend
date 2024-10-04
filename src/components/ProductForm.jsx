@@ -39,7 +39,7 @@ const ProductForm = ({ product, onClose, onRefresh }) => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get(`${config.BASE_API}/categories`);
+        const response = await axios.get(`${config.BASE_API}/api/categories`);
         setCategories(response.data.data);
       } catch (error) {
         console.error('Error fetching categories:', error);
@@ -69,7 +69,7 @@ const ProductForm = ({ product, onClose, onRefresh }) => {
     try {
       let category = formData.categoria;
       if (showNewCategoryInput && newCategory) {
-        const response = await axios.post(`${config.BASE_API}/categories`, { nombre: newCategory }, {
+        const response = await axios.post(`${config.BASE_API}/api/categories`, { nombre: newCategory }, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -91,13 +91,13 @@ const ProductForm = ({ product, onClose, onRefresh }) => {
       };
 
       if (product) {
-        await axios.put(`${config.BASE_API}/products/${product._id}`, data, {
+        await axios.put(`${config.BASE_API}/api/products/${product._id}`, data, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
         });
       } else {
-        await axios.post(`${config.BASE_API}/products`, data, {
+        await axios.post(`${config.BASE_API}/api/products`, data, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -210,6 +210,7 @@ const ProductForm = ({ product, onClose, onRefresh }) => {
               {categories.map((cat) => (
                 <option key={cat._id} value={cat.nombre}>{cat.nombre}</option>
               ))}
+              <option>Seleccionar una categoria</option>
               <option value="otros">Otros</option>
             </Form.Control>
             {showNewCategoryInput && (

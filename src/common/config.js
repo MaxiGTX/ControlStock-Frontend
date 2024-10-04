@@ -1,6 +1,6 @@
 const config = {
     VERSION: '9.0',
-    BASE_API: 'http://localhost:5000/api',
+    BASE_API: 'https://controlstock-backend.onrender.com',
 }
 
 export default config;

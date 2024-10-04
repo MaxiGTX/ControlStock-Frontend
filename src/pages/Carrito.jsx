@@ -16,7 +16,7 @@ function Carrito({ carrito, clearCart, incrementQuantity, decrementQuantity, rem
     const actualizarPrecios = async () => {
       const updatedCart = await Promise.all(carrito.map(async (producto) => {
         try {
-          const response = await axios.get(`${config.BASE_API}/products/codigo/${producto.codigo}`);
+          const response = await axios.get(`${config.BASE_API}/api/products/codigo/${producto.codigo}`);
           return { ...producto, precio: response.data.data.precio };
         } catch (error) {
           console.error('Error actualizando precio del producto:', error);

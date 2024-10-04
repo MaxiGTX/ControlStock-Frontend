@@ -21,7 +21,7 @@ const AdminUsers = () => {
     }
   
     try {
-      const response = await axios.get(`${config.BASE_API}/userEdit/users`, {
+      const response = await axios.get(`${config.BASE_API}/api/userEdit/users`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -36,7 +36,7 @@ const AdminUsers = () => {
   const handleDelete = async () => {
     const token = localStorage.getItem('token');
     try {
-      await axios.delete(`${config.BASE_API}/users/${userToDelete}`, {
+      await axios.delete(`${config.BASE_API}/api/users/${userToDelete}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

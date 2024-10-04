@@ -15,7 +15,7 @@ const AdminDashboard = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get(`${config.BASE_API}/products`);
+      const response = await axios.get(`${config.BASE_API}/api/products`);
       setProductos(response.data.data);
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -25,7 +25,7 @@ const AdminDashboard = () => {
   const handleDelete = async () => {
     const token = localStorage.getItem('token'); 
     try {
-      await axios.delete(`${config.BASE_API}/products/${productToDelete}`, {
+      await axios.delete(`${config.BASE_API}/api/products/${productToDelete}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
