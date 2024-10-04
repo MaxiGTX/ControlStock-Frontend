@@ -1,4 +1,4 @@
-ControlStock - Gestión de Inventarios
+#ControlStock - Gestión de Inventarios
 ¡Bienvenido a ControlStock! Esta aplicación está diseñada para ayudarte a gestionar tus productos de manera eficiente y mantener tu inventario siempre actualizado. Este repositorio contiene toda la información necesaria sobre nuestra aplicación web.
 
 Funcionalidades Principales
