@@ -1,0 +1,6 @@
+.backnosotros {
+    color: white;
+    background: linear-gradient(to left, #020214, rgb(7, 5, 53));
+    background: cover;
+    min-height: 100vh;
+}

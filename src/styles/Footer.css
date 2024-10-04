@@ -1,0 +1,58 @@
+footer {
+    background-image: url('../assets/1014.jpg');
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  footer h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li p {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons li a {
+    color: #fff;
+    transition: background-color 0.2s ease;
+    border-radius: 50%;
+    padding: 5px; 
+  }
+  
+  .social-icons li a:hover {
+    background-color: #007bff;
+  }
+  
+  .neon-border {
+    border: px solid #68e6f7; /* Borde lila */
+    box-shadow: 0 0 10px #68e6f7, 0 0 15px #68e6f7, 0 0 20px #68e6f7, 0 0 25px #68e6f7, 0 0 30px #68e6f7; /* Efecto de neón lila */
+    border-radius: 10%; /* Hace que el borde sea redondo */
+  }
+  
+  .neon-line {
+    height: 3px; /* Ajusta esto para cambiar el grosor de la línea */
+    background-color: #007bff; /* Color lila */
+    box-shadow: 0 0 10px #007bff, 0 0 15px #007bff, 0 0 20px #007bff, 0 0 25px #007bff, 0 0 30px #007bff; /* Efecto de neón lila */
+  }
+  
+  .linknone{
+    text-decoration: none;
+  }

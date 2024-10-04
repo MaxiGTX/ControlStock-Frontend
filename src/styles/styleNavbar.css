@@ -1,0 +1,108 @@
+.nav-bg{
+    background-color: #013D37;
+};
+
+.boton-nacho {
+    background-color: red;
+};
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 1rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color: #013D37;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+.imgNavbar{
+    width: 100px;
+}
+.imgFooter{
+    
+    height: 150px;
+    position: relative;
+}
+
+.zIndex{
+    z-index: 1000;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: #013D37;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion {
+    --bs-accordion-color: var(--bs-body-color);
+    /* sirve para cambiar el color del formulario */
+    --bs-accordion-bg: #01655B; 
+    --bs-accordion-transition: color 0.30s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
+    --bs-accordion-border-color: #9C6B4B;
+    --bs-accordion-border-width: 3px;
+    --bs-accordion-border-radius: 7px;
+    --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: white;
+    --bs-accordion-btn-bg:  #014F47;
+    --bs-accordion-btn-icon-width: 1.25rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-focus-border-color: #9C6B4B;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #9C6B4B;
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-color: white;
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+    
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #01655B;
+    --bs-btn-border-color: #013D37;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #013D37;
+    --bs-btn-hover-border-color: #013D37;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #013D37;
+    --bs-btn-active-border-color: #013D37;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #013D37;
+    --bs-btn-disabled-border-color: #13D37;
+     border-radius: 20px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid #9C6B4B;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition:  .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+.font-navbar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}

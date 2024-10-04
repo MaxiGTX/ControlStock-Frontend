@@ -1,0 +1,62 @@
+.Adproductback{
+    color: white;
+    background: linear-gradient(to left, #020214, rgb(7, 5, 53));
+    background: cover;
+    min-height: 100vh;
+}
+.thback{
+    color: white;
+    background-image: url('../assets/1014.jpg');
+}
+
+.modal-content {
+    background: transparent;
+    border-bottom: none;
+    border: none;
+}
+.modal-body-delete {
+    position: relative;
+    height: 15rem;
+    background: #ffffff;
+    border-radius: 10px;
+    border: none;
+}
+
+.modal-body-delete i {
+    position: absolute;
+    bottom: 13rem;
+    left: 13rem;
+    border-radius: 10px;
+    width: 6rem;
+    height: max-content;
+    background: #ffb200;
+    color: #fff;
+    font-size: 5rem;
+}
+
+.modal-body-delete button {
+    border: 2px solid #ffb200;
+    border-radius: 10px;
+    height: 3em;
+    font-weight: 600;
+    color: #ffb200;
+    background: #fff;
+}
+.modal-body-delete button:hover {
+    border: 2px solid #ffb200;
+    border-radius: 10px;
+    background: #ffb200;
+    height: 3em;
+    font-weight: 600;
+    color: #ffffff;
+}
+.modal-body-delete .advertencia {
+    color: #020214;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.modal-body-delete .advertencia-contenido {
+    color: #545458;
+    font-size: 1rem;
+}

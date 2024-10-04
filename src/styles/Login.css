@@ -1,0 +1,200 @@
+/* Efectos generales  */
+:root {
+    --bg: #1e2345;
+    --violet: rgb(161, 132, 240);
+    --pink: #d60087;
+    --turquoise: #2fdabd;
+}
+
+::-ms-reveal {
+    filter: invert(100%);
+}
+
+.loginback {
+    background: linear-gradient(to left, #020214, rgb(7, 5, 53));
+    background: cover;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: rgb(230, 219, 219);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(209, 192, 192);
+    transition: background-color 5000s ease-in-out 0s;
+    /* box-shadow: inset 0 0 20px 20px #23232329; */
+}
+
+.alert-danger {
+    color: rgb(158, 36, 36);
+}
+.navbar {
+    /* background: #141a32; */
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+.btn-registrar {
+    height: 2.5rem;
+    font-weight: 600;
+    color: rgb(226, 216, 216);
+    border: none;
+    background: transparent;
+    border-radius: 0.4rem;
+    font-size: 1.15em;
+}
+.btn-registrar:hover {
+    background: #484f6e;
+}
+
+.social-icons-redes i {
+    color: rgb(201, 178, 178);
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+h6 {
+    color: rgb(201, 178, 178);
+    margin: 5px;
+    font-size: 0.8rem;
+}
+
+.enlances-footer a {
+    color: rgb(201, 178, 178);
+    margin: 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.form-control {
+    border: 1px solid rgba(225, 225, 255, 0.2);
+    color: rgb(209, 192, 192);
+    background: rgb(24, 24, 59);
+    border-radius: 0.3rem;
+    height: 3em;
+}
+
+.form-control:focus {
+    border: 1px solid rgba(225, 225, 255, 0.2);
+    color: rgb(209, 192, 192);
+    background: rgb(1, 1, 22);
+    border-radius: 0.3rem;
+    height: 3em;
+}
+.remember label {
+    display: flex;
+    text-align: start;
+}
+
+.btn_submit {
+    height: 2.5rem;
+    width: 40%;
+    font-weight: 600;
+    color: rgb(29, 28, 28);
+    border: none;
+    background: rgb(212, 205, 205);
+    border-radius: 0.4rem;
+}
+.btn_submit:hover {
+    background: rgb(236, 232, 232);
+}
+
+.registro-link {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registro-link a {
+    position: absolute;
+    margin: 1.3rem;
+}
+.registro-link p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.forgot:link,
+.forgot:visited {
+    position: relative;
+    color: #3181ff;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.link-restablecer-password:link,
+.link-restablecer-password:visited {
+    color: #497aff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.link-restablecer-password:hover,
+.link-restablecer-password:hover {
+    text-decoration: underline;
+}
+
+.link-registrarse:link,
+.link-registrarse:visited {
+    color: #1e55eb;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.link-registrarse:hover,
+.link-registrarse:hover {
+    text-decoration: underline;
+}
+
+.login-correcto {
+    display: none;
+}
+
+.login-incorrecto {
+    display: block;
+}
+
+@media screen and (max-width: 575px) {
+    .btn_submit {
+        height: 2.5rem;
+        width: 100%;
+        font-weight: 600;
+        color: rgb(29, 28, 28);
+        border: none;
+        background: rgb(212, 205, 205);
+        border-radius: 0.4rem;
+    }
+
+    .navbar {
+        /* background: #141a32; */
+        display: flex;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .btn-registrar {
+        /* height: 2.3rem; */
+        margin-top: 0.5rem;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        border: none;
+        background: transparent;
+        border-radius: 0.4rem;
+        font-size: 1.15em;
+    }
+}

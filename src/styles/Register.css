@@ -1,0 +1,341 @@
+.registerback {
+    background: linear-gradient(to left, #020214, rgb(7, 5, 53));
+    background: cover;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: rgb(230, 219, 219);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(209, 192, 192);
+    transition: background-color 5000s ease-in-out 0s;
+    /* box-shadow: inset 0 0 20px 20px #23232329; */
+}
+
+.btn_submit {
+    height: 2.5rem;
+    width: 40%;
+    font-weight: 600;
+    color: rgb(29, 28, 28);
+    border: none;
+    background: rgb(212, 205, 205);
+    border-radius: 0.4rem;
+}
+.btn_submit:hover {
+    background: rgb(236, 232, 232);
+}
+
+.navbar {
+    /* background: #141a32; */
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+.btn-login {
+    /* height: 2.3rem; */
+    font-weight: 600;
+    color: rgb(226, 216, 216);
+    border: none;
+    background: transparent;
+    border-radius: 0.4rem;
+    font-size: 1.15em;
+}
+.btn-registrar:hover {
+    background: #484f6e;
+}
+
+.formularioRegistro {
+    /* background: #beb4b427;
+    backdrop-filter: blur(0.3rem); */
+    border: 1px solid rgb(226, 216, 216);
+    padding: 2rem;
+}
+/* clases personalidadas  */
+
+.container-input .bi-x-circle-fill {
+    color: #df4840;
+}
+
+.container-input .bi-check-circle-fill {
+    color: #2fb341;
+}
+
+/* Clases personalizadas hoy  */
+
+.form-label {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Styles input  */
+
+.form_grupo_input {
+    position: relative;
+}
+
+.form-control {
+    height: 48px;
+    padding: 6px 42px 6px 12px;
+    transition: 0.3s ease all;
+    border: 1px solid rgba(225, 225, 255, 0.2);
+    color: rgb(209, 192, 192);
+    background: rgb(24, 24, 59);
+    border-radius: 0.3rem;
+    height: 3em;
+}
+.form-control:focus {
+    height: 48px;
+    padding: 6px 42px 6px 12px;
+    transition: 0.3s ease all;
+    border: 1px solid rgba(225, 225, 255, 0.2);
+    color: rgb(209, 192, 192);
+    background: rgb(24, 24, 59);
+    border-radius: 0.3rem;
+    height: 3em;
+}
+
+/* styles mensaje de error */
+.input-error {
+    display: none;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: #df4840;
+}
+
+.input-error-activo {
+    display: block;
+}
+
+/* styles icono  */
+.icon-validacion {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    opacity: 0;
+}
+
+.bi {
+    font-size: 1.2rem;
+}
+
+/* stylos para validacion  */
+
+.form_grupo_correcto .icon-validacion {
+    color: #2fb341;
+    opacity: 1;
+}
+
+.form_grupo_correcto .form-control:focus {
+    /* background-color: 1px solid rgba(75, 113, 238, 0.1); */
+    border-color: 2px solid #072c92;
+    box-shadow: none;
+    border: 1px solid rgba(225, 225, 255, 0.2);
+    color: rgb(209, 192, 192);
+    background: rgb(24, 24, 59);
+}
+
+.form_grupo_incorrecto .form-label {
+    color: rgb(230, 219, 219);
+}
+
+.form_grupo_incorrecto .form-control {
+    border: 1px solid #df4840;
+    box-shadow: none;
+    color: rgb(209, 192, 192);
+    background: rgb(24, 24, 59);
+}
+
+.form_grupo_incorrecto .form-control:focus {
+    border: 1px solid #df4840;
+    box-shadow: none;
+    color: rgb(209, 192, 192);
+    background: rgb(24, 24, 59);
+}
+
+.form_grupo_incorrecto .icon-validacion {
+    color: #df4840;
+    opacity: 1;
+}
+
+.form_grupo_incorrecto .input-error {
+    display: block;
+}
+
+.input-error-checked {
+    display: none;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: #df4840;
+}
+
+.input-error-checked-activo {
+    display: block;
+}
+
+.form-grupo-checke-incorrecto {
+    background-color: rgba(223, 72, 64, 0.1);
+    border: 1px solid #df4840;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-select {
+    height: 48px;
+    background: rgb(24, 24, 59);
+    border-radius: 0.3rem;
+    color: rgb(230, 219, 219);
+    height: 3em;
+    box-shadow: none;
+    transition: 0.3s ease all;
+}
+
+.form-grupo-genero .form-select {
+    border: 1px solid #df4840;
+    box-shadow: none;
+}
+
+select::-ms-expand {
+    border: 1px solid white;
+    background: red;
+}
+
+.form-grupo-genero .form-select:focus {
+    border-color: #df4840;
+    background: rgb(24, 24, 59);
+    border-radius: 0.3rem;
+    color: rgb(230, 219, 219);
+    height: 3em;
+    box-shadow: none;
+}
+
+.form-grupo-genero .input-error {
+    display: block;
+}
+
+.form_grupo_genero_correcto .form-select:focus {
+    background: rgb(24, 24, 59);
+    border-radius: 0.3rem;
+    color: rgb(230, 219, 219);
+    height: 3em;
+    box-shadow: none;
+    box-shadow: none;
+}
+
+.social-icons-redes i {
+    color: rgb(201, 178, 178);
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+h6 {
+    color: rgb(201, 178, 178);
+    margin: 5px;
+    font-size: 0.8rem;
+}
+
+.enlances-footer a {
+    color: rgb(201, 178, 178);
+    margin: 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    width: 75%;
+}
+
+/* quitar fechas de etiqueta input type=numer  */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .btn_submit {
+        height: 2.5rem;
+        width: 100%;
+        font-weight: 600;
+        color: rgb(29, 28, 28);
+        border: none;
+        background: rgb(212, 205, 205);
+        border-radius: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .navbar {
+        /* background: #141a32; */
+        display: flex;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    .container {
+        display: flex;
+        width: 90%;
+    }
+
+    .formularioRegistro {
+        width: 100%;
+    }
+
+    .formularioRegistro {
+        /* background: #beb4b427;
+    backdrop-filter: blur(0.3rem); */
+        border: none;
+        padding: 0px;
+    }
+}
+
+
+.form_grupo.invalid .form-control {
+    border-color: red;
+  }
+  
+  .form_grupo.invalid .icon-validacion {
+    color: red;
+  }
+  
+  .form_grupo .icon-validacion {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .form_grupo .error-message {
+    color: rgb(252, 65, 65);
+    font-size: 0.875em;
+  }
+  
+  .form_grupo .icon-success {
+    color: green;
+  }
+  
+  .form_grupo .icon-error {
+    color: red;
+  }
+  .password-toggle-icon {
+    cursor: pointer;
+    position: absolute;
+    right: -30px; /* Ajusta este valor según sea necesario */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    font-size: 1.5em;
+  }

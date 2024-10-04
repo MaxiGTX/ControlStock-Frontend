@@ -1,0 +1,60 @@
+.successback {
+    background: linear-gradient(to left, #020214, rgb(7, 5, 53));
+    background: cover;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: rgb(230, 219, 219);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    /* background: #141a32; */
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* ---------botones----------- */
+
+.btn_inicio {
+    height: 2.5rem;
+    width: 40%;
+    font-weight: 600;
+    color: rgb(29, 28, 28);
+    border: none;
+    background: rgb(212, 205, 205);
+    border-radius: 0.4rem;
+}
+.btn_inicio:hover {
+    background: rgb(236, 232, 232);
+}
+/* -----------icono-------------- */
+i {
+    font-size: 5rem;
+}
+
+/* ------------------------------------------------- */
+
+.social-icons-redes i {
+    color: rgb(201, 178, 178);
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+h6 {
+    color: rgb(201, 178, 178);
+    margin: 5px;
+    font-size: 0.8rem;
+}
+
+.enlances-footer a {
+    color: rgb(201, 178, 178);
+    margin: 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+}

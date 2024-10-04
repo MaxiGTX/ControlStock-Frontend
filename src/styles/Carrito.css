@@ -1,0 +1,30 @@
+.backcarrito{
+    color: white;
+    background: linear-gradient(to left, #020214, rgb(7, 5, 53));
+    background: cover;
+    min-height: 100vh;
+}
+
+.backlista{
+    background-image: url('../assets/1014.jpg');
+}
+
+/* styles/Home.css */
+
+@media (max-width: 1000px) {
+    .list-group-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+   
+  
+    .list-group-item .d-flex .btn {
+      margin-right: 5px;
+    }
+  
+    .list-group-item .d-flex .btn:last-child {
+      margin-right: 0;
+    }
+  }
+  
