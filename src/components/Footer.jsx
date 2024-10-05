@@ -1,10 +1,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Logo from '../assets/Contrlremovebg.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Footer.css'; 
 
 function Footer() {
+
+  const navigate = useNavigate()
+
   return (
     <div>
       <div className='neon-line'></div>
@@ -33,9 +36,9 @@ function Footer() {
             <Col xs={12} md={3}>
               <h4>Redes sociales</h4>
               <ul className="social-icons">
-                <li><a className="linknone fab fa-facebook fa-2x" href="/NotFound"></a></li>
-                <li><a className="linknone fab fa-twitter fa-2x" href="/NotFound"></a></li>
-                <li><a className="linknone fab fa-instagram fa-2x" href="/NotFound"></a></li>
+                <li><Link className='linknone' to="/NotFound"><a className="linknone fab fa-facebook fa-2x"></a></Link></li>
+                <li><Link className='linknone' to="/NotFound"><a className="linknone fab fa-twitter fa-2x" ></a></Link></li>
+                <li><Link className='linknone' to="/NotFound"><a className="linknone fab fa-instagram fa-2x"></a></Link></li>
               </ul>
             </Col>
           </Row>

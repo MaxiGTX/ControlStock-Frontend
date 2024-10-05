@@ -27,7 +27,7 @@ const Login = ({ changeJwt }) => {
       const token = response.data.access_token;
       console.log("Token received:", token);
       changeJwt(token);
-      window.location.href = '/Home';
+      //window.location.href = '/Home';
     } catch (error) {
       setError('La dirección o contraseña que escribiste no es correcta. Prueba otra vez o haz clic en el enlace "Olvidaste tu contraseña".');
     }
@@ -43,7 +43,7 @@ const Login = ({ changeJwt }) => {
               <form onSubmit={handleSubmit} id="formLogin">
                 <p className="text-center mb-4">Ingrese su nombre de usuario y contraseña para poder ingresar.</p>
                 <div className="my-3">
-                  <label htmlFor="username" className="form-label">Dirección de correo electrónico</label>
+                  <label htmlFor="username" className="form-label">Nombre de Usuario</label>
                   <input type="text" className="form-control" id="username" name="username" value={formData.username} onChange={handleChange} required />
                 </div>
                 <div className="mb-3">

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/Register.css';
 import config from '../common/config.js'
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -15,21 +16,22 @@ const Register = () => {
     genero: '',
     terminos: false,
   });
-
+  const navigate = useNavigate();
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
   const [message, setMessage] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
   const expresiones = {
-    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+    username: /^[a-zA-ZÀ-ÿ\s]{8,40}$/, // Letras y espacios, pueden llevar acentos.
     password: /^.{4,12}$/, // 4 a 12 dígitos.
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     telefono: /^\d{7,14}$/, // 7 a 14 números.
   };
 
   const mensajesError = {
-    username: 'Escribe tu nombre de usuario',
+    username: 'Escribe tu nombre de usuario debe tener minimo 8 caracteres',
     email: 'Ingrese un correo valido',
     lastname: 'Escribe tu apellido',
     firstname: 'Escribe tu nombre',
@@ -94,7 +96,7 @@ const Register = () => {
     });
     setTouched(newTouched);
 
-    const validUsername = validarCampo(expresiones.nombre, formData.username, 'username');
+    const validUsername = validarCampo(expresiones.username, formData.username, 'username');
     const validEmail = validarCampo(expresiones.correo, formData.email, 'email');
     const validApellido = validarCampo(expresiones.nombre, formData.lastname, 'lastname');
     const validNombre = validarCampo(expresiones.nombre, formData.firstname, 'firstname');
@@ -108,7 +110,7 @@ const Register = () => {
       try {
         const response = await axios.post(`${config.BASE_API}/api/users/register`, formData);
         setMessage(response.data.message);
-        window.location.href = '/registroSuccess';
+        navigate('/registroSuccess');
       } catch (error) {
         setMessage('Error al registrar el usuario');
         console.error(error.response.data);
