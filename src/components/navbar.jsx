@@ -9,7 +9,7 @@ const NavbarComponent = ({ authenticated, role, changeJwt }) => {
   const handleLogout = () => {
     changeJwt("");
     localStorage.removeItem("token");
-    setCarrito([]);
+    //setCarrito([]);
   };
 
   return (
