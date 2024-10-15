@@ -26,16 +26,16 @@ const App = () => {
 
   const verifyEmployee = () => {
     if (!jwt) {
-      console.log("No token found");
+      //console.log("No token found");
       return;
     }
 
     try {
       const decodedToken = jwtDecode(jwt);
       setIsAdmin(decodedToken.role);
-      console.log("Se inició sesión", decodedToken.username);
+      //console.log("Se inició sesión", decodedToken.username);
     } catch (error) {
-      console.log("Error decoding JWT:", error);
+      //console.log("Error decoding JWT:", error);
     }
   };
 

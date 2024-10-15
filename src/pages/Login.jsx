@@ -25,7 +25,6 @@ const Login = ({ changeJwt }) => {
     try {
       const response = await axios.post(`${config.BASE_API}/api/users/login`, formData);
       const token = response.data.access_token;
-      console.log("Token received:", token);
       changeJwt(token);
       //window.location.href = '/Home';
     } catch (error) {
