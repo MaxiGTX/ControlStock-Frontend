@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import { ListGroup, Button, Modal, Image } from 'react-bootstrap';
 import { FaTrash, FaExclamationTriangle } from 'react-icons/fa';
+import config from '../common/config';
 import axios from 'axios';
 import '../styles/Carrito.css'
 
