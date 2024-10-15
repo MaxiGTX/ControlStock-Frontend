@@ -38,7 +38,7 @@ const ProductDetails = ({ addToCart }) => {
         <Container className="product-details-container">
             <Row className="mt-5">
                 <Col className='col-md-6 col-12 mb-3'>
-                    <Image src={producto.imagen} className="card-personalizada-img" fluid />
+                    <Image src={producto.imagen} className="card-personalizada-img" fluid alt={producto.nombre || "Imagen no disponible"} />
                 </Col>
                 <Col md={6}>
                     <h1>{producto.nombre}</h1>
